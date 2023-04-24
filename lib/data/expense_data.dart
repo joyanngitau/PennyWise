@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:flutter/material.dart';
 import 'package:flutter_expenses_tracker/datetime/date_time_helper.dart';
 import 'package:flutter_expenses_tracker/models/expenses_item.dart';
 
@@ -13,7 +14,7 @@ class ExpenseData extends ChangeNotifier {
   }
 
   //add now expense
-  void addNewExpenses(ExpenseItem newExpense) {
+  void addNewExpense(ExpenseItem newExpense) {
     overallExpenseList.add(newExpense);
   }
 
