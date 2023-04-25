@@ -1,3 +1,5 @@
+import 'individual_bar.dart';
+
 class BarData {
   final double sunAmount;
   final double monAmount;
@@ -42,6 +44,6 @@ class BarData {
 
       //sat
       IndividualBar(x: 0, y: satAmount),
-    ]
+    ];
   }
 }
