@@ -35,7 +35,7 @@ class ExpenseTile extends StatelessWidget {
         subtitle: Text(
           '${dateTime.day} / ${dateTime.month} / ${dateTime.year}',
         ),
-        trailing: Text('\$' + amount),
+        trailing: Text('\KSh' + amount + '0'),
       ),
     );
   }

@@ -16,7 +16,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   //text controllers
   final newExpenseNameController = TextEditingController();
-  final newExpenseDollarController = TextEditingController();
+  final newExpenseShillingsController = TextEditingController();
   final newExpenseCentsController = TextEditingController();
 
   @override
@@ -46,13 +46,13 @@ class _HomePageState extends State<HomePage> {
 
             Row(
               children: [
-                //dollars
+                //shillings
                 Expanded(
                   child: TextField(
-                    controller: newExpenseDollarController,
+                    controller: newExpenseShillingsController,
                     keyboardType: TextInputType.number,
                     decoration: const InputDecoration(
-                      hintText: "Dollars",
+                      hintText: "Shillings",
                     ),
                   ),
                 ),
@@ -97,11 +97,11 @@ class _HomePageState extends State<HomePage> {
   void save() {
     //only save when all fields are filled
     if (newExpenseNameController.text.isNotEmpty &&
-        newExpenseDollarController.text.isNotEmpty &&
+        newExpenseShillingsController.text.isNotEmpty &&
         newExpenseCentsController.text.isNotEmpty) {
       //put dollars and cents together
       String amount =
-          '${newExpenseDollarController.text}.${newExpenseCentsController.text}';
+          '${newExpenseShillingsController.text}.${newExpenseCentsController.text}';
 
       //create expense item
       ExpenseItem newExpense = ExpenseItem(
@@ -128,7 +128,7 @@ class _HomePageState extends State<HomePage> {
   //clear controllers
   void clear() {
     newExpenseNameController.clear();
-    newExpenseDollarController.clear();
+    newExpenseShillingsController.clear();
     newExpenseCentsController.clear();
   }
 
