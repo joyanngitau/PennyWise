@@ -1,7 +1,7 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
-class myBarGraph extends StatelessWidget {
+class MyBarGraph extends StatelessWidget {
   final double? maxY;
   final double sunAmount;
   final double monAmount;
@@ -11,7 +11,7 @@ class myBarGraph extends StatelessWidget {
   final double friAmount;
   final double satAmount;
 
-  const myBarGraph({
+  const MyBarGraph({
     super.key,
     required this.maxY,
     required this.sunAmount,

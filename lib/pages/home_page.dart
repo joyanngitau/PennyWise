@@ -1,10 +1,10 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_expenses_tracker/components/expense_summary.dart';
+import 'package:flutter_expenses_tracker/components/expense_tile.dart';
+import 'package:flutter_expenses_tracker/data/expense_data.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../components/expense_tile.dart';
-import '../data/expense_data.dart';
-import '../models/expenses_item.dart';
+import 'package:flutter_expenses_tracker/models/expenses_item.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -18,6 +18,14 @@ class _HomePageState extends State<HomePage> {
   final newExpenseNameController = TextEditingController();
   final newExpenseDollarController = TextEditingController();
   final newExpenseCentsController = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+
+    //prepare data on startup
+    Provider.of<ExpenseData>(context, listen: false).prepareData();
+  }
 
   //add new expense
   void addNewExpense() {
@@ -80,6 +88,11 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  //delete expense
+  void deleteExpense(ExpenseItem expense) {
+    Provider.of<ExpenseData>(context, listen: false).deleteExpense(expense);
+  }
+
   //save
   void save() {
     //put dollars and cents together
@@ -124,7 +137,7 @@ class _HomePageState extends State<HomePage> {
           ),
           body: ListView(children: [
             //weekly summary
-            ExpenseSummary(startOfWeek: value.startOfWeek()),
+            ExpenseSummary(startOfWeek: value.startOfWeekDate()),
 
             const SizedBox(height: 20),
 
