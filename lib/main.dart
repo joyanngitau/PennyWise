@@ -10,7 +10,7 @@ void main() async {
 
   //open a hive box
   await Hive.openBox("expense_database");
-  
+
   runApp(const MyApp());
 }
 

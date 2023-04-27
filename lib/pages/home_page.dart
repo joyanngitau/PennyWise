@@ -101,7 +101,7 @@ class _HomePageState extends State<HomePage> {
         newExpenseCentsController.text.isNotEmpty) {
       //put dollars and cents together
       String amount =
-          '${newExpenseDollarController.text},${newExpenseCentsController.text}';
+          '${newExpenseDollarController.text}.${newExpenseCentsController.text}';
 
       //create expense item
       ExpenseItem newExpense = ExpenseItem(
