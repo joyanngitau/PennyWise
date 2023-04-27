@@ -1,6 +1,8 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
+import 'bar_data.dart';
+
 class MyBarGraph extends StatelessWidget {
   final double? maxY;
   final double sunAmount;
@@ -119,6 +121,6 @@ Widget getBottomTitles(double value, TitleMeta meta) {
   }
   return SideTitleWidget(
     child: text,
-    AxisSide: meta.axisSize,
+    axisSide: meta.axisSide,
   );
 }

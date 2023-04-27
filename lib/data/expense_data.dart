@@ -27,6 +27,7 @@ class ExpenseData extends ChangeNotifier {
     overallExpenseList.add(newExpense);
 
     notifyListeners();
+    db.saveData(overallExpenseList);
   }
 
   //delete expense
@@ -34,6 +35,7 @@ class ExpenseData extends ChangeNotifier {
     overallExpenseList.remove(expense);
 
     notifyListeners();
+    db.saveData(overallExpenseList);
   }
 
   //get weekday[mon, tue, etc] frome dateTime object
