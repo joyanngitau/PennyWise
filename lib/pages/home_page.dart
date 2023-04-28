@@ -1,10 +1,10 @@
-import 'package:flutter_expenses_tracker/components/expense_summary.dart';
-import 'package:flutter_expenses_tracker/components/expense_tile.dart';
-import 'package:flutter_expenses_tracker/data/expense_data.dart';
+import 'package:PennyWise/components/expense_summary.dart';
+import 'package:PennyWise/components/expense_tile.dart';
+import 'package:PennyWise/data/expense_data.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'package:flutter_expenses_tracker/models/expenses_item.dart';
+import 'package:PennyWise/models/expenses_item.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

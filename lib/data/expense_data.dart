@@ -1,8 +1,8 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter_expenses_tracker/data/hive_database.dart';
-import 'package:flutter_expenses_tracker/datetime/date_time_helper.dart';
-import 'package:flutter_expenses_tracker/models/expenses_item.dart';
+import 'package:PennyWise/data/hive_database.dart';
+import 'package:PennyWise/datetime/date_time_helper.dart';
+import 'package:PennyWise/models/expenses_item.dart';
 
 class ExpenseData extends ChangeNotifier {
   //list of all expenses

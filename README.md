@@ -1,16 +1,31 @@
-# flutter_expenses_tracker
+# PennyWise
 
-A new Flutter project.
+This Flutter application helps users keep track of their daily expenses by allowing them to enter expenses and displaying the sum of daily expenses on a graph for each day in a week. The app also provides a weekly total of expenses to help users better manage their finances.
+
+## Features
+
+* Add daily expenses: Users can enter the amount and description of their expenses for each day.
+* Display daily expenses: The app displays the sum of daily expenses on a graph for each day in a week.
+* Weekly total: The app calculates and displays the total expenses for the entire week.
+
+## Technologies
+
+* Flutter: This application is built using Flutter, a mobile development framework by Google.
+* Hive: Hive is used for local storage of the daily expenses entered by users.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To use this application, follow these steps:
 
-A few resources to get you started if this is your first Flutter project:
+1. Clone this repository.
+2. Set up Firebase Realtime Database and replace the Firebase configuration in `lib/services/firebase_service.dart` with your own.
+3. Build and run the application on your device or emulator.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+
+![1682603762802](image/README/1682603762802.png)
+
+## Feedback and Contributions
+
+If you have any feedback or suggestions, please feel free to open an issue or pull request on GitHub.
