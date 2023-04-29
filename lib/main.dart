@@ -1,4 +1,4 @@
-import 'package:PennyWise/data/expense_data.dart';
+import 'data/expense_data.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:provider/provider.dart';
