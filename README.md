@@ -21,10 +21,14 @@ To use this application, follow these steps:
 2. Set up Firebase Realtime Database and replace the Firebase configuration in `lib/services/firebase_service.dart` with your own.
 3. Build and run the application on your device or emulator.
 
+To install the app on your phone:
+
+1. Download the apk from Google Drive:https://drive.google.com/file/d/1hVjymkyn9CrU7qw5q7h_ZdEOYmwB-uv3/view?usp=sharing
+2. Install
 
 ## Screenshots
 
-![1682603762802](image/README/1682603762802.png)
+![1682858780803](image/README/1682858780803.png)
 
 ## Feedback and Contributions
 
