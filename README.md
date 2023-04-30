@@ -30,6 +30,11 @@ To install the app on your phone:
 
 ![1682858780803](image/README/1682858780803.png)
 
+
+![1682859255529](image/README/1682859255529.png)
+
+*yes, biscuits are my vice
+
 ## Feedback and Contributions
 
 If you have any feedback or suggestions, please feel free to open an issue or pull request on GitHub.
