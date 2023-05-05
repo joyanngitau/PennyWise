@@ -22,9 +22,10 @@ To use this application, follow these steps:
 
 ## Screenshots
 
-![1682858780803](image/README/1682858780803.png)
+![HomePage](image/README/1682858780803.png)
 
-![1682859255529](image/README/1682859255529.png)
+![Addnew](image/README/1682859226434.png)
+
 
 *yes, biscuits are my vice
 
